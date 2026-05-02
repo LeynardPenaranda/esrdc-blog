@@ -13,6 +13,13 @@ const Header = () => {
           aria-label="Go to homepage"
         >
           <Image
+            src="/ssu.png"
+            alt="SSU Logo"
+            width={36}
+            height={36}
+            className="h-8 w-8 shrink-0 object-contain sm:h-9 sm:w-9"
+          />
+          <Image
             src="/esrdc-logo.png"
             alt="ESRDC Logo"
             width={44}
@@ -20,9 +27,11 @@ const Header = () => {
             priority
             className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"
           />
-          <span className="truncate text-sm font-semibold tracking-[0.08em] text-slate-950 uppercase sm:text-lg">
-            ESRDC
-          </span>
+          <div className="flex min-w-0 items-center gap-2">
+            <span className="truncate text-sm font-semibold tracking-[0.08em] text-slate-950 uppercase sm:text-lg">
+              SSU - ESRDC
+            </span>
+          </div>
         </Link>
 
         <div className="hidden min-w-0 flex-1 justify-center md:flex">

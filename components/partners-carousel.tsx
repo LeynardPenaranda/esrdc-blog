@@ -53,6 +53,10 @@ const partners = [
     name: "University of Eastern Philippines",
     src: "/partners/university-of-eastern-philippines.png",
   },
+  {
+    name: "Basaranaan nga Organisasyon Han San Isidro",
+    src: "/partners/BFRFS.png",
+  },
 ];
 
 type PartnersCarouselProps = {
@@ -111,7 +115,7 @@ export default function PartnersCarousel({
             {loopedPartners.map((partner, index) => (
               <div
                 key={`${partner.name}-${index}`}
-                className="flex h-36 w-[14rem] shrink-0 items-center justify-center px-4 py-3 sm:h-40 sm:w-[16rem]"
+                className="flex h-36 w-56 shrink-0 items-center justify-center px-4 py-3 sm:h-40 sm:w-[16rem]"
                 aria-hidden={index >= partners.length}
               >
                 <Image

@@ -1,10 +1,11 @@
 import Image from "next/image";
 import PartnersCarousel from "@/components/partners-carousel";
+import ScrollButton from "@/components/ui/scroll-button";
 import { colors } from "@/utils/colors";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="relative min-h-screen">
       <section
         id="home"
         className="scroll-mt-28 overflow-hidden px-4 pb-16 pt-8 sm:px-6 sm:pb-20 sm:pt-10 lg:pb-24 lg:pt-12"
@@ -32,24 +33,26 @@ export default function Home() {
           </div>
 
           <div className="mt-8 flex w-full max-w-md flex-col gap-3 sm:mt-10 sm:max-w-none sm:flex-row sm:justify-center sm:gap-4">
-            <button
+            <ScrollButton
+              label="Introduction"
+              targetId="introduction"
               className="w-full px-6 py-3.5 text-xs font-semibold tracking-[0.14em] text-white uppercase transition sm:w-auto sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.18em]"
               style={{
+                color: "#ffffff",
                 border: `1px solid ${colors.primaryColor}`,
                 backgroundColor: colors.primaryColor,
               }}
-            >
-              Introduction
-            </button>
-            <button
+            />
+            <ScrollButton
+              label="Explore ESRDC"
+              targetId="esrdc-banner"
               className="w-full px-6 py-3.5 text-xs font-semibold tracking-[0.14em] text-white uppercase transition sm:w-auto sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.18em]"
               style={{
+                color: "#ffffff",
                 border: `1px solid ${colors.secondColor}`,
                 backgroundColor: colors.secondColor,
               }}
-            >
-              Explore the platform
-            </button>
+            />
           </div>
         </div>
 
@@ -58,7 +61,10 @@ export default function Home() {
           subtitle="Collaborating institutions, agencies, and organizations that support ESRDC's work in environmental research, education, and sustainability."
         />
 
-        <div className="mx-auto mt-4 w-full sm:mt-8 lg:mt-10 lg:w-[70vw] xl:w-[65vw]">
+        <div
+          id="esrdc-banner"
+          className="mx-auto mt-4 w-full scroll-mt-28 sm:mt-8 lg:mt-10 lg:w-[70vw] xl:w-[65vw]"
+        >
           <div className="overflow-hidden rounded-[1.75rem] border border-black/15 bg-white shadow-[0_30px_80px_rgba(15,23,42,0.12)] sm:rounded-4xl">
             <Image
               src="/esrdc-banner.png"
@@ -70,6 +76,12 @@ export default function Home() {
               className="block h-auto w-full"
             />
           </div>
+          <p
+            className="mt-4 text-center text-xl font-bold tracking-[0.08em] sm:mt-5 sm:text-2xl lg:text-3xl"
+            style={{ color: colors.primaryColor }}
+          >
+            SSU Environmental Sustainability Research and Development Center
+          </p>
         </div>
       </section>
 
@@ -77,7 +89,76 @@ export default function Home() {
         id="achievements"
         className="scroll-mt-28 px-4 py-14 sm:px-6 sm:py-16 lg:py-20"
       >
-        <div className="mx-auto mb-14 max-w-4xl rounded-[28px] border border-black/10 bg-white px-5 py-8 shadow-[0_18px_50px_rgba(15,23,42,0.07)] sm:mb-16 sm:px-8 sm:py-10 lg:mb-20 lg:px-10 lg:py-12">
+        <div className="mx-auto mb-14 max-w-6xl sm:mb-16 lg:mb-20">
+          <div className="mx-auto max-w-4xl text-center">
+            <Image
+              src="/ssu.png"
+              alt="SSU Logo"
+              width={96}
+              height={96}
+              quality={100}
+              className="mx-auto mb-4 h-20 w-20 object-contain sm:mb-5 sm:h-24 sm:w-24"
+            />
+            <p
+              className="text-xs font-semibold uppercase tracking-[0.3em]"
+              style={{ color: colors.primaryColor }}
+            >
+              University Leadership
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold text-slate-950 sm:text-4xl lg:text-5xl">
+              Our Beloved President and Vice President of Samar State University
+            </h2>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:gap-8">
+            <div className="overflow-hidden rounded-[28px] border border-black/10 bg-white shadow-[0_30px_80px_rgba(15,23,42,0.14)]">
+              <div className="bg-slate-50">
+                <Image
+                  src="/ssu-president.png"
+                  alt="Samar State University President"
+                  width={1200}
+                  height={1500}
+                  quality={100}
+                  className="block h-auto w-full object-contain object-center"
+                />
+              </div>
+              <div className="px-5 py-5 sm:px-6">
+                <p
+                  className="text-sm font-semibold uppercase tracking-[0.22em]"
+                  style={{ color: colors.primaryColor }}
+                >
+                  President
+                </p>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-[28px] border border-black/10 bg-white shadow-[0_30px_80px_rgba(15,23,42,0.14)]">
+              <div className="bg-slate-50">
+                <Image
+                  src="/ssu-vice-president.png"
+                  alt="Samar State University Vice President"
+                  width={1200}
+                  height={1500}
+                  quality={100}
+                  className="block h-auto w-full object-contain object-center"
+                />
+              </div>
+              <div className="px-5 py-5 sm:px-6">
+                <p
+                  className="text-sm font-semibold uppercase tracking-[0.22em]"
+                  style={{ color: colors.primaryColor }}
+                >
+                  Vice President
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="introduction"
+          className="mx-auto mb-14 max-w-4xl rounded-[28px] border border-black/10 bg-white px-5 py-8 shadow-[0_18px_50px_rgba(15,23,42,0.07)] sm:mb-16 sm:px-8 sm:py-10 lg:mb-20 lg:px-10 lg:py-12"
+        >
           <div className="mx-auto max-w-3xl">
             <div
               className="inline-flex rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-white"
@@ -213,6 +294,46 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="mx-auto mb-14 grid max-w-6xl overflow-hidden bg-white sm:mb-16 lg:mb-20 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
+          <div
+            className="min-h-[420px] bg-[#dceaf8] lg:min-h-[680px]"
+            style={{
+              background: `linear-gradient(180deg, #dceaf8 0%, ${colors.primaryColor}18 100%)`,
+            }}
+          >
+            <Image
+              src="/maam-eds.png"
+              alt="Edelyn Oliverio-Echapare, PhD"
+              width={1200}
+              height={1500}
+              quality={100}
+              className="block h-full w-full object-cover object-center"
+            />
+          </div>
+
+          <div className="flex flex-col justify-center px-6 py-10 text-center sm:px-10 sm:py-14 lg:px-16 lg:py-20 lg:text-left">
+            <p
+              className="text-5xl leading-none font-semibold sm:text-6xl"
+              style={{ color: `${colors.primaryColor}33` }}
+            >
+              "
+            </p>
+            <blockquote className="mt-6 text-3xl leading-[1.02] font-semibold text-slate-950 sm:text-4xl lg:text-5xl">
+              “Knowledge becomes meaningful when transformed into action for
+              people, communities, and the environment.”
+            </blockquote>
+            <h3 className="mt-10 text-xl font-bold text-slate-950 sm:text-2xl">
+              Edelyn Oliverio-Echapare, Ph.D
+            </h3>
+            <p
+              className="mt-2 text-base font-medium text-slate-600 sm:text-lg"
+              style={{ color: colors.primaryColor }}
+            >
+              Head of ESRDC
+            </p>
+          </div>
+        </div>
+
         <div className="mx-auto grid max-w-6xl gap-4 sm:gap-6 md:grid-cols-3">
           {[
             "Research-driven sustainability reporting",
@@ -289,6 +410,14 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ScrollButton
+        label="Back to Top"
+        targetId="home"
+        ariaLabel="Scroll back to top"
+        className="absolute right-4 bottom-4 z-20 rounded-full px-4 py-3 text-sm font-semibold text-white shadow-[0_16px_32px_rgba(15,23,42,0.2)] transition-transform hover:-translate-y-1 sm:right-6 sm:bottom-6"
+        style={{ backgroundColor: colors.primaryColor }}
+      />
     </div>
   );
 }
