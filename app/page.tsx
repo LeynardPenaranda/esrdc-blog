@@ -545,11 +545,11 @@ export default function Home() {
             <Reveal
               as="a"
               delay={240}
-              href="mailto:hello@esrdc.org"
+              href="mailto:esrdc@ssu.edu.ph"
               className="rounded-[10px] px-5 py-3 text-sm font-semibold text-white sm:px-6 sm:text-base"
               style={{ backgroundColor: colors.primaryColor }}
             >
-              esrdcssu@gmail.com
+              esrdc@ssu.edu.ph
             </Reveal>
           </div>
         </div>

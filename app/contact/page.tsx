@@ -29,10 +29,10 @@ export default function ContactPage() {
               Email
             </p>
             <a
-              href="mailto:hello@esrdc.org"
+              href="mailto:esrdc@ssu.edu.ph"
               className="mt-4 block text-2xl font-semibold text-white"
             >
-              hello@esrdc.org
+              esrdc@ssu.edu.ph
             </a>
             <p className="mt-4 text-base leading-7 text-white/75">
               For research partnerships, sustainability programs, and official
@@ -54,7 +54,7 @@ export default function ContactPage() {
             </p>
             <div className="mt-6">
               <a
-                href="mailto:hello@esrdc.org"
+                href="mailto:esrdc@ssu.edu.ph"
                 className="inline-flex rounded-[10px] px-5 py-3 text-sm font-semibold text-white"
                 style={{ backgroundColor: colors.primaryColor }}
               >
