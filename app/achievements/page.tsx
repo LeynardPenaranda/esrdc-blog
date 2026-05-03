@@ -1,13 +1,6 @@
+import CardLists from "@/components/cardLists";
+import { ExternalLink } from "lucide-react";
 import { colors } from "@/utils/colors";
-
-const achievements = [
-  "Research-driven sustainability reporting",
-  "Community-centered environmental initiatives",
-  "Practical frameworks for long-term impact",
-  "Biodiversity field studies and species documentation",
-  "Environmental mapping through GIS-based analysis",
-  "Climate resilience projects for local communities",
-];
 
 export default function AchievementsPage() {
   return (
@@ -31,28 +24,40 @@ export default function AchievementsPage() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {achievements.map((item, index) => (
-            <article
-              key={item}
-              className="rounded-[28px] border border-black/10 bg-white p-7 shadow-[0_16px_40px_rgba(15,23,42,0.06)]"
+        <div className="mt-12 overflow-hidden border border-slate-200 bg-white p-3 shadow-sm sm:p-4">
+          <div className="relative aspect-video overflow-hidden bg-slate-950">
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/nr8vmB0bVmg?autoplay=1&playsinline=1"
+              title="ESRDC achievements video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
+        <div className="mx-auto mt-8 max-w-3xl text-center">
+          <p className="text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            For more updates, featured activities, and ongoing initiatives from
+            ESRDC, visit our official{" "}
+            <a
+              href="https://www.facebook.com/SSU.ESRDC"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 font-semibold text-slate-950 transition-colors hover:text-slate-700"
             >
-              <p
-                className="text-xs font-semibold uppercase tracking-[0.3em]"
-                style={{ color: colors.primaryColor }}
-              >
-                0{index + 1}
-              </p>
-              <h2 className="mt-4 text-2xl font-semibold text-slate-900">
-                {item}
-              </h2>
-              <p className="mt-4 text-base leading-7 text-slate-600">
-                A growing part of ESRDC&apos;s commitment to connect research,
-                fieldwork, and local impact through strong environmental
-                practice.
-              </p>
-            </article>
-          ))}
+              <span className="underline decoration-slate-400 underline-offset-4">
+                Facebook page
+              </span>
+              <ExternalLink className="size-4" aria-hidden="true" />
+            </a>
+            .
+          </p>
+        </div>
+
+        <div className="mt-12">
+          <CardLists />
         </div>
       </div>
     </section>

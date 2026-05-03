@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "@/components/ui/reveal";
 import { colors } from "@/utils/colors";
 
 const partners = [
@@ -74,12 +75,14 @@ export default function PartnersCarousel({
     <section className="px-4 py-14 sm:px-6 sm:py-16 lg:py-20">
       <div className="mx-auto w-full max-w-[80vw]">
         <div className="mx-auto max-w-3xl text-center">
-          <p
+          <Reveal
+            as="p"
+            delay={0}
             className="text-xs font-semibold uppercase tracking-[0.3em]"
             style={{ color: colors.primaryColor }}
           >
             Network
-          </p>
+          </Reveal>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             {partners.map((partner) => (
               <div
@@ -99,12 +102,20 @@ export default function PartnersCarousel({
               </div>
             ))}
           </div>
-          <h2 className="mt-4 text-3xl font-semibold text-slate-950 sm:text-4xl">
+          <Reveal
+            as="h2"
+            delay={100}
+            className="mt-4 text-3xl font-semibold text-slate-950 sm:text-4xl"
+          >
             {title}
-          </h2>
-          <p className="mt-5 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+          </Reveal>
+          <Reveal
+            as="p"
+            delay={180}
+            className="mt-5 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8"
+          >
             {subtitle}
-          </p>
+          </Reveal>
         </div>
 
         <div

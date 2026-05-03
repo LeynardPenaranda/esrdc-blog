@@ -46,7 +46,7 @@ const Header = () => {
             borderColor: colors.primaryColor,
           }}
         >
-          Get Started
+          CONTACT
         </Link>
       </div>
 

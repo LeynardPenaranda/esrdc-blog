@@ -9,7 +9,6 @@ const navItems = [
   { label: "Achievements", href: "/achievements" },
   { label: "Team", href: "/team" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
 ];
 
 const NavList = () => {
