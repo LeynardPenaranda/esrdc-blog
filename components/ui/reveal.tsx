@@ -5,6 +5,7 @@ import {
   useRef,
   useState,
   type CSSProperties,
+  type ElementType,
   type ReactNode,
 } from "react";
 
@@ -56,12 +57,13 @@ export default function Reveal({
     return () => observer.disconnect();
   }, [threshold]);
 
-  const Component = as;
+  const Component = as as ElementType;
+  const elementProps = rest as Record<string, unknown>;
 
   return (
     <Component
-      {...rest}
-      ref={ref as never}
+      {...elementProps}
+      ref={ref}
       className={`scroll-reveal${isVisible ? " is-visible" : ""}${
         className ? ` ${className}` : ""
       }`}
