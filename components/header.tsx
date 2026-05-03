@@ -1,9 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { colors } from "@/utils/colors";
+import { CENTER_ACRONYM, CENTER_NAME, HEADER_BRAND_NAME } from "@/utils/site";
 import NavList from "./ui/navlist";
 
-const Header = () => {
+type HeaderProps = {
+  brandName?: string;
+};
+
+const Header = ({ brandName = HEADER_BRAND_NAME }: HeaderProps) => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-black/8 bg-white/95 px-4 py-3 backdrop-blur sm:px-6">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 sm:gap-6">
@@ -21,15 +26,18 @@ const Header = () => {
           />
           <Image
             src="/esrdc-logo.png"
-            alt="ESRDC Logo"
+            alt={`${CENTER_NAME} Logo`}
             width={44}
             height={44}
             priority
             className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"
           />
           <div className="flex min-w-0 items-center gap-2">
-            <span className="truncate text-sm font-semibold tracking-[0.08em] text-slate-950 uppercase sm:text-lg">
-              SSU - ESRDC
+            <span className="text-sm font-semibold tracking-[0.08em] text-slate-950 uppercase sm:hidden">
+              SSU - {CENTER_ACRONYM}
+            </span>
+            <span className="hidden max-w-xs text-xs leading-tight font-semibold tracking-[0.04em] text-slate-950 uppercase sm:inline md:max-w-sm lg:max-w-md lg:text-sm">
+              {brandName}
             </span>
           </div>
         </Link>

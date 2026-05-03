@@ -1,6 +1,7 @@
 import CardLists from "@/components/cardLists";
 import { ExternalLink } from "lucide-react";
 import { colors } from "@/utils/colors";
+import { CENTER_NAME } from "@/utils/site";
 
 export default function AchievementsPage() {
   return (
@@ -14,11 +15,11 @@ export default function AchievementsPage() {
             Achievements
           </p>
           <h1 className="mt-4 text-4xl font-semibold text-slate-950 sm:text-5xl">
-            Milestones that reflect ESRDC&apos;s work in research and
+            Milestones that reflect {CENTER_NAME}&apos;s work in research and
             sustainability.
           </h1>
           <p className="mt-6 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-            These focus areas highlight how ESRDC supports environmental
+            These focus areas highlight how {CENTER_NAME} supports environmental
             protection, student engagement, and evidence-based action across
             Samar and beyond.
           </p>
@@ -29,7 +30,7 @@ export default function AchievementsPage() {
             <iframe
               className="absolute inset-0 h-full w-full"
               src="https://www.youtube.com/embed/nr8vmB0bVmg?autoplay=1&playsinline=1"
-              title="ESRDC achievements video"
+              title={`${CENTER_NAME} achievements video`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
@@ -39,8 +40,8 @@ export default function AchievementsPage() {
 
         <div className="mx-auto mt-8 max-w-3xl text-center">
           <p className="text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-            For more updates, featured activities, and ongoing initiatives from
-            ESRDC, visit our official{" "}
+            For more updates, featured activities, and ongoing initiatives from{" "}
+            {CENTER_NAME}, visit our official{" "}
             <a
               href="https://www.facebook.com/SSU.ESRDC"
               target="_blank"

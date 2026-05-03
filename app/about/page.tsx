@@ -1,4 +1,5 @@
 import { colors } from "@/utils/colors";
+import { CENTER_NAME } from "@/utils/site";
 
 export default function AboutPage() {
   return (
@@ -8,7 +9,7 @@ export default function AboutPage() {
           className="text-xs font-semibold uppercase tracking-[0.3em]"
           style={{ color: colors.secondColor }}
         >
-          About ESRDC
+          About {CENTER_NAME}
         </p>
         <h1 className="mt-4 max-w-3xl text-4xl font-semibold text-slate-950 sm:text-5xl">
           Building environmental progress through research, collaboration, and
@@ -24,9 +25,10 @@ export default function AboutPage() {
               sustainable development initiatives.
             </p>
             <p>
-              ESRDC connects researchers, educators, students, institutions,
-              and communities through programs that strengthen scientific
-              inquiry, environmental awareness, and long-term ecological care.
+              {CENTER_NAME} connects researchers, educators, students,
+              institutions, and communities through programs that strengthen
+              scientific inquiry, environmental awareness, and long-term
+              ecological care.
             </p>
             <p>
               By combining research excellence with local engagement, the center

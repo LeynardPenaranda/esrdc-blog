@@ -1,6 +1,6 @@
-# ESRDC Blog Website
+# Environmental Sustainability Research and Development Center (ESRDC) Blog Website
 
-A clean Next.js starter for building the ESRDC blog from scratch.
+A clean Next.js starter for building the Environmental Sustainability Research and Development Center (ESRDC) blog from scratch.
 
 ## Development
 

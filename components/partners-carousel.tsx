@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Reveal from "@/components/ui/reveal";
 import { colors } from "@/utils/colors";
+import { CENTER_NAME } from "@/utils/site";
 
 const partners = [
   { name: "APSI", src: "/partners/apsi.png" },
@@ -58,6 +59,10 @@ const partners = [
     name: "Basaranaan nga Organisasyon Han San Isidro",
     src: "/partners/BFRFS.png",
   },
+  {
+    name: "BIOTA Philippines",
+    src: "/partners/BIOTA.png",
+  },
 ];
 
 type PartnersCarouselProps = {
@@ -69,7 +74,7 @@ const loopedPartners = [...partners, ...partners];
 
 export default function PartnersCarousel({
   title = "Partners and Collaborators",
-  subtitle = "Organizations and institutions supporting ESRDC's environmental and sustainability initiatives.",
+  subtitle = `Organizations and institutions supporting ${CENTER_NAME}'s environmental and sustainability initiatives.`,
 }: PartnersCarouselProps) {
   return (
     <section className="px-4 py-14 sm:px-6 sm:py-16 lg:py-20">

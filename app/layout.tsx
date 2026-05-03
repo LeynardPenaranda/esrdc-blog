@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import { cn } from "@/lib/utils";
+import { CENTER_NAME } from "@/utils/site";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -17,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ESRDC Blog",
-  description: "A clean Next.js starting point for the ESRDC blog.",
+  title: `${CENTER_NAME} Blog`,
+  description: `A clean Next.js starting point for the ${CENTER_NAME} blog.`,
 };
 
 export default function RootLayout({

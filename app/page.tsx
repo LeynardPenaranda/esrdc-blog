@@ -3,6 +3,7 @@ import PartnersCarousel from "@/components/partners-carousel";
 import Reveal from "@/components/ui/reveal";
 import ScrollButton from "@/components/ui/scroll-button";
 import { colors } from "@/utils/colors";
+import { CENTER_NAME } from "@/utils/site";
 
 const homeHighlights = [
   "Environmental Research",
@@ -31,7 +32,7 @@ export default function Home() {
               className="text-[0.65rem] font-semibold uppercase tracking-[0.3em] sm:text-xs sm:tracking-[0.35em]"
               style={{ color: colors.primaryColor }}
             >
-              ESRDC
+              {CENTER_NAME}
             </Reveal>
             <Reveal
               as="h1"
@@ -45,10 +46,10 @@ export default function Home() {
               delay={220}
               className="mx-auto mt-6 max-w-3xl text-base leading-7 text-slate-800 sm:mt-8 sm:text-lg sm:leading-8 lg:text-xl"
             >
-              The Launch of the ESRDC Initiative In a time when environmental
-              challenges continue to intensify across the globe, the need for
-              science-based action, community collaboration, and sustainability
-              education has never been more important.
+              The Launch of the {CENTER_NAME} Initiative In a time when
+              environmental challenges continue to intensify across the globe,
+              the need for science-based action, community collaboration, and
+              sustainability education has never been more important.
             </Reveal>
           </div>
 
@@ -56,7 +57,7 @@ export default function Home() {
             <ScrollButton
               label="Introduction"
               targetId="introduction"
-              className="w-full px-6 py-3.5 text-xs font-semibold tracking-[0.14em] text-white uppercase transition sm:w-auto sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.18em]"
+              className="w-full cursor-pointer px-6 py-3.5 text-xs font-semibold tracking-[0.14em] text-white uppercase transition sm:w-auto sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.18em]"
               style={{
                 color: "#ffffff",
                 border: `1px solid ${colors.primaryColor}`,
@@ -64,9 +65,9 @@ export default function Home() {
               }}
             />
             <ScrollButton
-              label="Explore ESRDC"
+              label="Explore ESRDC MORE"
               targetId="esrdc-banner"
-              className="w-full px-6 py-3.5 text-xs font-semibold tracking-[0.14em] text-white uppercase transition sm:w-auto sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.18em]"
+              className="w-full cursor-pointer px-6 py-3.5 text-xs font-semibold tracking-[0.14em] text-white uppercase transition sm:w-auto sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.18em]"
               style={{
                 color: "#ffffff",
                 border: `1px solid ${colors.secondColor}`,
@@ -77,7 +78,7 @@ export default function Home() {
 
           <div
             className="text-marquee-mask mt-10 w-full max-w-5xl overflow-hidden rounded-full border border-black/10 bg-white/70 px-3 py-3 shadow-[0_16px_40px_rgba(15,23,42,0.08)] backdrop-blur-sm sm:mt-12 sm:px-4"
-            aria-label="ESRDC highlights"
+            aria-label={`${CENTER_NAME} highlights`}
           >
             <div className="text-marquee-track flex w-max items-center gap-4 sm:gap-5">
               {[...homeHighlights, ...homeHighlights].map((item, index) => (
@@ -106,7 +107,7 @@ export default function Home() {
 
         <PartnersCarousel
           title="Meet Our Partners"
-          subtitle="Collaborating institutions, agencies, and organizations that support ESRDC's work in environmental research, education, and sustainability."
+          subtitle={`Collaborating institutions, agencies, and organizations that support ${CENTER_NAME}'s work in environmental research, education, and sustainability.`}
         />
 
         <div
@@ -116,7 +117,7 @@ export default function Home() {
           <div className="overflow-hidden rounded-[1.75rem] border border-black/15 bg-white shadow-[0_30px_80px_rgba(15,23,42,0.12)] sm:rounded-4xl">
             <Image
               src="/esrdc-banner.png"
-              alt="ESRDC sustainability dashboard preview"
+              alt={`${CENTER_NAME} sustainability dashboard preview`}
               width={3364}
               height={1245}
               quality={100}
@@ -162,7 +163,7 @@ export default function Home() {
               delay={100}
               className="mt-4 text-3xl font-semibold text-slate-950 sm:text-4xl lg:text-5xl"
             >
-              Our Beloved President and Vice President of Samar State University
+              Dedicated Leaders for Academic Excellence and Sustainability
             </Reveal>
           </div>
 
@@ -241,7 +242,7 @@ export default function Home() {
               delay={180}
               className="mt-5 max-w-2xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8"
             >
-              The ESRDC was established with a vision to become a leading hub
+              {CENTER_NAME} was established with a vision to become a leading hub
               for environmental research, biodiversity conservation, climate
               action, and sustainable development initiatives in Samar and
               beyond.
@@ -274,9 +275,10 @@ export default function Home() {
               delay={100}
               className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8"
             >
-              ESRDC aims to strengthen environmental and sustainability research
-              that contributes to evidence-based decision-making and long-term
-              ecological protection. The center supports studies related to:
+              {CENTER_NAME} aims to strengthen environmental and sustainability
+              research that contributes to evidence-based decision-making and
+              long-term ecological protection. The center supports studies
+              related to:
             </Reveal>
             <ul className="mt-6 grid gap-3 text-base text-slate-800 sm:grid-cols-2 sm:gap-4 sm:text-lg">
               {[
@@ -303,8 +305,8 @@ export default function Home() {
               delay={220}
               className="mt-6 max-w-2xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8"
             >
-              Through these initiatives, ESRDC seeks to bridge the gap between
-              research and real-world environmental solutions.
+              Through these initiatives, {CENTER_NAME} seeks to bridge the gap
+              between research and real-world environmental solutions.
             </Reveal>
           </div>
 
@@ -318,13 +320,13 @@ export default function Home() {
                 Empowering Future Environmental Leaders
               </Reveal>
               <Reveal as="p" delay={100} className="mt-4">
-                One of the core missions of ESRDC is to empower students and
-                young researchers through experiential learning and field-based
-                environmental activities. By participating in biodiversity
-                surveys, ecological monitoring, conservation campaigns, and
-                sustainability projects, students gain practical skills while
-                developing a deeper appreciation for nature and environmental
-                stewardship.
+                One of the core missions of {CENTER_NAME} is to empower students
+                and young researchers through experiential learning and
+                field-based environmental activities. By participating in
+                biodiversity surveys, ecological monitoring, conservation
+                campaigns, and sustainability projects, students gain practical
+                skills while developing a deeper appreciation for nature and
+                environmental stewardship.
               </Reveal>
               <Reveal as="p" delay={180} className="mt-4">
                 The center also promotes interdisciplinary collaboration by
@@ -343,12 +345,12 @@ export default function Home() {
                 Strengthening Partnerships for Sustainability
               </Reveal>
               <Reveal as="p" delay={100} className="mt-4">
-                Environmental protection requires collective action. ESRDC
-                recognizes the importance of partnerships in creating lasting
-                impact. The center actively collaborates with local communities,
-                academic institutions, conservation groups, and development
-                organizations to promote sustainable practices and environmental
-                awareness.
+                Environmental protection requires collective action.
+                {CENTER_NAME} recognizes the importance of partnerships in
+                creating lasting impact. The center actively collaborates with
+                local communities, academic institutions, conservation groups,
+                and development organizations to promote sustainable practices
+                and environmental awareness.
               </Reveal>
               <Reveal as="p" delay={180} className="mt-4">
                 These partnerships help strengthen conservation programs,
@@ -366,8 +368,8 @@ export default function Home() {
                 A Commitment to the Future
               </Reveal>
               <Reveal as="p" delay={100} className="mt-4">
-                As ESRDC begins its journey, it carries a strong commitment to
-                research excellence, environmental responsibility, and
+                As {CENTER_NAME} begins its journey, it carries a strong
+                commitment to research excellence, environmental responsibility, and
                 sustainable development. The center envisions a future where
                 science, education, and community action work hand in hand to
                 conserve biodiversity, protect ecosystems, and build
@@ -376,8 +378,8 @@ export default function Home() {
               <Reveal as="p" delay={180} className="mt-4">
                 This blog will serve as a platform for sharing research updates,
                 field experiences, environmental insights, student activities,
-                conservation stories, and sustainability initiatives from ESRDC
-                and its partners.
+                conservation stories, and sustainability initiatives from
+                {CENTER_NAME} and its partners.
               </Reveal>
               <Reveal as="p" delay={260} className="mt-4">
                 Together, we move forward toward a more sustainable and
@@ -389,7 +391,7 @@ export default function Home() {
                 className="mt-4 font-medium text-slate-900"
               >
                 For collaborations, research partnerships, and environmental
-                initiatives, stay connected with ESRDC through our official
+                initiatives, stay connected with {CENTER_NAME} through our official
                 platforms and upcoming activities.
               </Reveal>
             </div>
@@ -443,7 +445,7 @@ export default function Home() {
               className="mt-2 text-base font-medium text-slate-600 sm:text-lg"
               style={{ color: colors.primaryColor }}
             >
-              Head of ESRDC
+              Head of {CENTER_NAME}
             </Reveal>
           </div>
         </div>
@@ -489,7 +491,7 @@ export default function Home() {
             className="text-xs font-semibold uppercase tracking-[0.3em]"
             style={{ color: colors.secondColor }}
           >
-            About ESRDC
+            About {CENTER_NAME}
           </Reveal>
           <Reveal
             as="h2"
@@ -504,9 +506,9 @@ export default function Home() {
             delay={180}
             className="mx-auto mt-6 max-w-3xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8"
           >
-            ESRDC supports organizations and communities with clear insights,
-            sustainability education, and measurable strategies that turn ideas
-            into meaningful outcomes.
+            {CENTER_NAME} supports organizations and communities with clear
+            insights, sustainability education, and measurable strategies that
+            turn ideas into meaningful outcomes.
           </Reveal>
         </div>
       </section>

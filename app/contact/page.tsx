@@ -1,4 +1,5 @@
 import { colors } from "@/utils/colors";
+import { CENTER_NAME } from "@/utils/site";
 
 export default function ContactPage() {
   return (
@@ -12,8 +13,8 @@ export default function ContactPage() {
             Contact
           </p>
           <h1 className="mt-4 text-4xl font-semibold text-slate-950 sm:text-5xl">
-            Connect with ESRDC for collaborations, research, and environmental
-            initiatives.
+            Connect with {CENTER_NAME} for collaborations, research, and
+            environmental initiatives.
           </h1>
           <p className="mt-6 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
             We welcome conversations with academic institutions, development
@@ -47,7 +48,7 @@ export default function ContactPage() {
               Stay Connected
             </p>
             <p className="mt-4 text-base leading-7 text-slate-700">
-              Follow ESRDC through its official platforms and upcoming
+              Follow {CENTER_NAME} through its official platforms and upcoming
               activities to stay informed about environmental research updates,
               student engagement, and conservation work.
             </p>

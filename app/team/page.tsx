@@ -1,4 +1,5 @@
 import { colors } from "@/utils/colors";
+import { CENTER_NAME } from "@/utils/site";
 
 const teamMembers = [
   {
@@ -19,7 +20,7 @@ const teamMembers = [
   {
     name: "Community Partners",
     description:
-      "Work with ESRDC to translate research into practical environmental action and awareness programs.",
+      `Work with ${CENTER_NAME} to translate research into practical environmental action and awareness programs.`,
   },
 ];
 
@@ -39,9 +40,9 @@ export default function TeamPage() {
             impact.
           </h1>
           <p className="mt-6 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-            ESRDC brings together educators, researchers, students, and partner
-            communities to build solutions rooted in collaboration and shared
-            environmental responsibility.
+            {CENTER_NAME} brings together educators, researchers, students, and
+            partner communities to build solutions rooted in collaboration and
+            shared environmental responsibility.
           </p>
         </div>
 
