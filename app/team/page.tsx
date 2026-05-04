@@ -34,7 +34,7 @@ const director = {
 };
 
 const facultyResearcher = {
-  name: "Andres III B. Sequito",
+  name: "Andres III B. Sequito, MB",
   role: "Faculty Researcher",
   image: "/team/Andress-Faculty-Researcher.png",
 };
