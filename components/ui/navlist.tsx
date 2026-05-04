@@ -7,6 +7,7 @@ import { colors } from "@/utils/colors";
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Achievements", href: "/achievements" },
+  { label: "Awards", href: "/awards" },
   { label: "Team", href: "/team" },
   { label: "About", href: "/about" },
 ];

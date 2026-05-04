@@ -445,7 +445,7 @@ export default function Home() {
               className="mt-2 text-base font-medium text-slate-600 sm:text-lg"
               style={{ color: colors.primaryColor }}
             >
-              Head of {CENTER_NAME}
+              Director of {CENTER_NAME}
             </Reveal>
           </div>
         </div>

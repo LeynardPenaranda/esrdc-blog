@@ -1,28 +1,148 @@
+import Image from "next/image";
 import { colors } from "@/utils/colors";
 import { CENTER_NAME } from "@/utils/site";
 
-const teamMembers = [
+const universityPresident = {
+  name: "Dr. Redentor S. Palencia",
+  role: "University President",
+  image: "/team/dr-redentor.png",
+};
+
+const vicePresident = {
+  name: "Dr. Felisa E. Gomba",
+  role: "VP for Research & Extension Services",
+  image: "/team/dr-felisa2.png",
+};
+
+const executiveDirectors = [
   {
-    name: "Research Coordinators",
-    description:
-      "Lead the development of environmental studies, field assessments, and knowledge-sharing initiatives.",
+    name: "Dr. Sherrie Ann C. Labid",
+    role: "Executive Director for Research",
+    image: "/team/dr-sherrie2.png",
   },
   {
-    name: "Faculty and Mentors",
-    description:
-      "Guide student researchers and strengthen interdisciplinary collaboration across academic programs.",
-  },
-  {
-    name: "Student Researchers",
-    description:
-      "Support biodiversity surveys, ecological monitoring, and sustainability projects through hands-on learning.",
-  },
-  {
-    name: "Community Partners",
-    description:
-      `Work with ${CENTER_NAME} to translate research into practical environmental action and awareness programs.`,
+    name: "Dr. Florabelle B. Patosa",
+    role: "Executive Director for Extension",
+    image: "/team/dr-patosa.png",
   },
 ];
+
+const director = {
+  name: "Edelyn Oliverio-Echapare, Ph.D",
+  role: "Director of ESRDC",
+  image: "/team/dr-eds.png",
+};
+
+const facultyResearcher = {
+  name: "Andres III B. Sequito",
+  role: "Faculty Researcher",
+  image: "/team/Andress-Faculty-Researcher.png",
+};
+
+const staffMembers = [
+  {
+    name: "Gladys C. Colandog",
+    role: "ESRDC Staff",
+    image: "/team/gladys-ESRDC-staff.png",
+    imageClassName: "object-top",
+    imageScaleClassName: "scale-115",
+    imageHoverScaleClassName: "group-hover:scale-125",
+  },
+  {
+    name: "Justyne Maye D. Nabablit, RCA, MICB",
+    role: "ESRDC Staff",
+    image: "/team/justyne-ESRDC-staff.png",
+  },
+  {
+    name: "Madel G. Babalcon",
+    role: "ESRDC Staff",
+    image: "/team/maam-madel.png",
+  },
+  {
+    name: "Rio C. Cecogo",
+    role: "ESRDC Staff",
+    image: "/team/rio-ESRDC-staff.png",
+    imageClassName: "object-[center_36%]",
+  },
+];
+
+type TeamMember = {
+  name: string;
+  role: string;
+  image: string;
+  imageClassName?: string;
+  imageScaleClassName?: string;
+  imageHoverScaleClassName?: string;
+};
+
+function TeamCard({
+  member,
+  featured = false,
+  compact = false,
+  imageClassName = "object-top",
+  imageScaleClassName = "scale-100",
+  imageHoverScaleClassName = "group-hover:scale-110",
+}: {
+  member: TeamMember;
+  featured?: boolean;
+  compact?: boolean;
+  imageClassName?: string;
+  imageScaleClassName?: string;
+  imageHoverScaleClassName?: string;
+}) {
+  return (
+    <article
+      className={`group mx-auto w-full max-w-sm overflow-hidden rounded-[28px] border border-black/10 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.08)] ${
+        featured ? "sm:max-w-md" : ""
+      }`}
+    >
+      <div
+        className={`relative overflow-hidden bg-slate-100 ${
+          featured ? "h-96 sm:h-112" : compact ? "h-72" : "h-80"
+        }`}
+      >
+        <Image
+          src={member.image}
+          alt={member.name}
+          fill
+          quality={100}
+          className={`object-cover transition-transform duration-500 ease-out ${imageScaleClassName} ${imageHoverScaleClassName} ${imageClassName}`}
+          sizes={featured ? "(min-width: 640px) 448px, 100vw" : "384px"}
+          priority={featured}
+        />
+      </div>
+      <div
+        className={`px-5 py-5 text-center sm:px-6 ${
+          compact ? "flex min-h-32 flex-col items-center justify-start" : ""
+        }`}
+      >
+        <p
+          className="text-xs font-semibold uppercase tracking-[0.24em]"
+          style={{ color: colors.primaryColor }}
+        >
+          {member.role}
+        </p>
+        <h2
+          className={`mt-2 font-semibold text-slate-950 ${
+            compact ? "text-lg sm:text-xl" : "text-xl sm:text-2xl"
+          }`}
+        >
+          {member.name}
+        </h2>
+      </div>
+    </article>
+  );
+}
+
+function VerticalConnector({ className = "" }: { className?: string }) {
+  return (
+    <div
+      className={`mx-auto h-12 w-px ${className}`}
+      style={{ backgroundColor: `${colors.primaryColor}55` }}
+      aria-hidden="true"
+    />
+  );
+}
 
 export default function TeamPage() {
   return (
@@ -46,24 +166,76 @@ export default function TeamPage() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          {teamMembers.map((member) => (
-            <article
-              key={member.name}
-              className="rounded-[28px] border border-black/10 bg-white p-8 shadow-[0_16px_40px_rgba(15,23,42,0.06)]"
-            >
-              <div
-                className="mb-5 h-14 w-14 rounded-2xl"
-                style={{ backgroundColor: `${colors.primaryColor}18` }}
-              />
-              <h2 className="text-2xl font-semibold text-slate-900">
-                {member.name}
-              </h2>
-              <p className="mt-4 text-base leading-7 text-slate-600">
-                {member.description}
-              </p>
-            </article>
-          ))}
+        <div className="mt-14">
+          <div className="flex justify-center">
+            <TeamCard member={universityPresident} featured />
+          </div>
+
+          <VerticalConnector />
+
+          <div className="flex justify-center">
+            <TeamCard member={vicePresident} />
+          </div>
+
+          <div className="mx-auto max-w-4xl" aria-hidden="true">
+            <VerticalConnector />
+            <div
+              className="hidden h-px md:block"
+              style={{ backgroundColor: `${colors.primaryColor}55` }}
+            />
+          </div>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {executiveDirectors.map((member) => (
+              <div key={member.name} className="relative">
+                <div
+                  className="absolute left-1/2 top-[-2rem] hidden h-8 w-px -translate-x-1/2 md:block"
+                  style={{ backgroundColor: `${colors.primaryColor}55` }}
+                  aria-hidden="true"
+                />
+                <TeamCard member={member} />
+              </div>
+            ))}
+          </div>
+
+          <VerticalConnector className="mt-0" />
+
+          <div className="flex justify-center">
+            <TeamCard member={director} />
+          </div>
+
+          <VerticalConnector />
+
+          <div className="flex justify-center">
+            <TeamCard member={facultyResearcher} />
+          </div>
+
+          <div className="mx-auto max-w-5xl" aria-hidden="true">
+            <VerticalConnector />
+            <div
+              className="hidden h-px md:block"
+              style={{ backgroundColor: `${colors.primaryColor}55` }}
+            />
+          </div>
+
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {staffMembers.map((member) => (
+              <div key={member.name} className="relative">
+                <div
+                  className="absolute left-1/2 top-[-2rem] hidden h-8 w-px -translate-x-1/2 md:block"
+                  style={{ backgroundColor: `${colors.primaryColor}55` }}
+                  aria-hidden="true"
+                />
+                <TeamCard
+                  member={member}
+                  compact
+                  imageClassName={member.imageClassName ?? "object-center"}
+                  imageScaleClassName={member.imageScaleClassName}
+                  imageHoverScaleClassName={member.imageHoverScaleClassName}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -37,16 +37,14 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="rounded-[28px] bg-slate-950 p-7 text-white">
+          <div className="rounded-[28px] bg-slate-950 p-7 text-center text-white">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
-              Mission Focus
+              Mission & Vision
             </p>
-            <ul className="mt-6 space-y-4 text-base leading-7 text-white/85">
-              <li>Advance sustainability and environmental research</li>
-              <li>Support biodiversity and ecosystem protection</li>
-              <li>Empower students through experiential learning</li>
-              <li>Strengthen partnerships for community impact</li>
-            </ul>
+            <p className="mt-6 text-2xl font-semibold leading-tight text-white sm:text-3xl">
+              Advancing environmental conservation and sustainable development
+              through research and community engagement.
+            </p>
           </div>
         </div>
       </div>

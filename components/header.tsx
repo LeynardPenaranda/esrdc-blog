@@ -10,7 +10,7 @@ type HeaderProps = {
 
 const Header = ({ brandName = HEADER_BRAND_NAME }: HeaderProps) => {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-black/8 bg-white/95 px-4 py-3 backdrop-blur sm:px-6">
+    <header className="w-full border-b border-black/8 bg-white/95 px-4 py-3 backdrop-blur sm:px-6">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 sm:gap-6">
         <Link
           href="/"
@@ -42,10 +42,6 @@ const Header = ({ brandName = HEADER_BRAND_NAME }: HeaderProps) => {
           </div>
         </Link>
 
-        <div className="hidden min-w-0 flex-1 justify-center md:flex">
-          <NavList />
-        </div>
-
         <Link
           href="/contact"
           className="inline-flex shrink-0 items-center justify-center rounded-[10px] px-4 py-2.5 text-sm font-bold !text-white transition-transform hover:-translate-y-0.5 sm:px-5 sm:text-base lg:px-7 lg:py-3"
@@ -58,8 +54,8 @@ const Header = ({ brandName = HEADER_BRAND_NAME }: HeaderProps) => {
         </Link>
       </div>
 
-      <div className="mx-auto mt-3 flex w-full max-w-6xl md:hidden">
-        <div className="w-full overflow-x-auto rounded-full [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="mx-auto mt-3 flex w-full max-w-6xl justify-center">
+        <div className="w-full overflow-x-auto rounded-full [-ms-overflow-style:none] [scrollbar-width:none] md:w-auto [&::-webkit-scrollbar]:hidden">
           <NavList />
         </div>
       </div>

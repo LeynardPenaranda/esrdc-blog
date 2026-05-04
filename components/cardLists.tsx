@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { CENTER_NAME } from "@/utils/site";
 
@@ -203,6 +204,44 @@ const descriptionTwentyTwo = `The Samar State University Environmental Sustainab
 
 const descriptionTwentyThree = `Northwest Samar State University (NwSSU) has inked a memorandum of understanding (MOU) with three other state universities on Samar Island to develop cooperation through collaborative activities in academic areas of interest. The partner universities are Eastern Samar State University (ESSU), Samar State University (SSU), and the University of Eastern Philippines (UEP).`;
 
+const descriptionTwentyFour = `SSU Environmental Sustainability and Research Development Center (ESRDC) and Eastern Samar State University (ESSU) teamed up for "Project SAMWAKAN," a powerful event focused on Forests Over Limestone (FOL) conservation! 🌳 The event, held on December 6-7, 2024 at Sulangan National High School in Guiuan, Eastern Samar, brought together 62 students.
+The goal was to raise awareness about the importance of FOL ecosystems that are vital for biodiversity and face increasing threats. Through seminars, discussions, and educational materials, participants gained a deeper understanding of the challenges facing FOL and their vital role in the environment.
+Project SAMWAKAN was a testament to the power of collaboration and the importance of engaging the next generation in environmental stewardship. The event's success will hopefully inspire participants to become advocates for conservation and contribute to the protection of FOL ecosystems for generations to come.
+#ProjectSAMWAKAN #FOLConservation #EnvironmentalAwareness #CommunityEngagement #EasternSamar #SSU #ESSU`;
+
+const descriptionTwentyFive = `ESRDC's 2025 Funding Review: Investing in a Sustainable Future
+The Environmental Sustainability Research and Development Center (ESRDC) at Samar State University (SSU) successfully concluded its annual in-house review for 2025 funding. The review was held on November 4 - 5, 2024, involved participants from the SSU main campus, Mercedes Campus, and Basey Campus, along with a panel of experts.
+The review process involved 21 participants: 12 for research projects and 9 for extension projects. The panel of experts comprised Dr. Rezy V. Mendaño, Dr. Ronald L. Orale, and Engr. Lady Ann M. Fabillar.
+The review process, conducted by the expert panel, evaluated each proposal based on its quality, potential impact, and alignment with the ESRDC's strategic goals. The proposals covered a wide range of research areas, including:
+- Environmental Pollution, Monitoring and Pollution Control
+- Ecological Solid Waste Management and Sustainable Resource
+- Environmental Conservation and Biodiversity Protection
+- Climate Change Mitigation and Adaptation
+- Clean Energy and Green Technology
+- Sustainable Agriculture and Food Security
+- Water Resource Management
+- Environmental Governance, Education and Advocacy
+- Disaster Risk Reduction and Management
+- Sustainable Urban Development.
+The ESRDC prioritizes collaboration and seeks to create practical solutions that benefit the community. The funded projects involve partnerships with local governments, other universities, and community groups, ensuring that research translates into tangible outcomes.
+The ESRDC remains committed to fostering innovative research, building capacity within the university and the wider community, and promoting environmental stewardship for a more sustainable future.`;
+
+const descriptionTwentySix = `Learning, laughter, and a whole lot of inspiration! The recent TECHNOLOGY AND LIVELIHOOD EDUCATION FOR SUSTAINABLE RURAL DEVELOPMENT PROGRAM (TLE4SRDP) ENHANCEMENT TRAINING FOR NON-TLE AND TVL TEACHERS IN SENIOR HIGH SCHOOLS event, held last October 5, 12, 19, and 26 at Samar State University, was a huge success thanks to the amazing participants who brought their energy and enthusiasm, and the incredible organizers who made it all possible. A special shout-out to Ma'am Janet D. Caber for her leadership and dedication to this project. We also extend our thanks to the Graduate School Faculty of MAED-TLE, Rebecca Pascual and Janette Casuco, and to the CIT instructors, Juvyra Peco, Mark Anthony Castillo, and Rolando Pantaleon, for their contributions to the training. Seeing the smiles on everyone's faces as they discovered new things was truly heartwarming.
+#LearningAndGrowing #CommunityEngagement #EventSuccess #TLE4SRDP`;
+
+const descriptionTwentySeven = `The SSU- Environmental Sustainability and Research Development Center joined forces with the LGU of Calbiga for a successful workshop focused on empowering barangay officials to lead the way in sustainable waste management! ♻️
+The workshop, held from October 28-30 at Mondejares Beach Resort in Calbayog City, brought together a dedicated group of barangay officials for a dynamic and engaging experience. The energy was electric as everyone actively shared ideas, learned new strategies, and worked together to develop practical solutions for improving waste management in Calbiga. 🙌
+A huge thank you to the LGU of Calbiga for their incredible partnership and support! We're excited to see the positive impact this workshop will have on the community.
+#SSUResearch #ExtensionServices #WasteManagement #CommunityEngagement #Calbiga #PartnershipForProgress`;
+
+const descriptionTwentyEight = `Muddy boots, determined hearts, and a shared vision for a greener future, that's what fueled our mangrove planting initiative in Jiabong last September 18th! 🌱💪 We embraced the challenging terrain and muddy conditions, working alongside dedicated organizations to bring life back to the coastline. Planting hope, one mangrove at a time, we witnessed the power of collective action as we revitalized this vital ecosystem. These resilient trees will not only protect our shores but also contribute to a healthier environment for generations to come.
+A huge thank you to Civil Service for inviting us to participate in this memorable activity! We were inspired by the power of collaboration and the impact we made when we worked together for a more sustainable future. We encourage everyone to join us in protecting our planet, every action counts!
+#MangrovePlanting #Jiabong #GreenFuture #CommunityAction`;
+
+const descriptionTwentyNine = `Amidst the whispers of the forest and the soothing sounds of the sea, we sow the seeds of a greener tomorrow. Today was about more than just a good hike or a refreshing dip in the sea; it was about infusing life with purpose and being part of a greater solution.
+We extend our heartfelt appreciation to our dedicated partners for making this event meaningful and successful: Samar PENRO, Catbalogan City ENRO, BLGU San Andres, and Cabugawan, Buri, Catbalogan City. We eagerly anticipate further collaborations with you as we ensure the growth and survival of the 500+ seedlings and propagules planted today. Thank you to everyone for showing up and making a significant difference.
+#ArborDay2024 #GreenInitiatives #SustainableFuture #CommunityPartnerships`;
+
 const getEmbedLink = (videoLink: string) => {
   if (videoLink.includes("youtu.be/")) {
     return videoLink.replace(
@@ -217,6 +256,19 @@ const getEmbedLink = (videoLink: string) => {
 
   return videoLink;
 };
+
+const INITIAL_VISIBLE_CARDS = 3;
+
+const renderDescription = (description: string) =>
+  description.split(/(#[^\s#]+)/g).map((part, index) =>
+    part.startsWith("#") ? (
+      <strong key={`${part}-${index}`} className="font-semibold text-slate-900">
+        {part}
+      </strong>
+    ) : (
+      part
+    ),
+  );
 
 const cardItems: CardItem[] = [
   {
@@ -400,115 +452,183 @@ const cardItems: CardItem[] = [
     extraLink:
       "https://nwssu.edu.ph/2025/05/15/nwssu-inks-mou-for-samar-inter-university-educ-pact/?fbclid=IwY2xjawRjzq9leHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEe6loND86D0qy-RDmEWfOENPhmvdaIf244ImdYSBmR0P7ejgpo4jDcK5_c1d8_aem_6Bc-y8T3PxOeccz24CLPoQ",
   },
+  {
+    id: 24,
+    title:
+      "Empowering Youth for Environmental Stewardship: Highlights from Project SAMWAKAN 2024",
+    description: descriptionTwentyFour,
+    img: "/carousel-list-images/24.jpg",
+    date: "December 23, 2024",
+  },
+  {
+    id: 25,
+    title:
+      "SSU-ESRDC 2025 Funding Review: Strengthening Research for Sustainable Development",
+    description: descriptionTwentyFive,
+    img: "/carousel-list-images/25.jpg",
+    date: "November 18, 2024",
+  },
+  {
+    id: 26,
+    title:
+      "Enhancing Teaching Competencies: Highlights from the TLE4SRDP Training Program",
+    description: descriptionTwentySix,
+    img: "/carousel-list-images/26.jpg",
+    date: "November 10, 2024",
+  },
+  {
+    id: 27,
+    title:
+      "SSU-ESRDC and LGU Calbiga Conduct Workshop on Sustainable Waste Management",
+    description: descriptionTwentySeven,
+    img: "/carousel-list-images/27.jpg",
+    date: "November 02, 2024",
+  },
+  {
+    id: 28,
+    title:
+      "Mangrove Planting Initiative in Jiabong Promotes Coastal Ecosystem Restoration",
+    description: descriptionTwentyEight,
+    img: "/carousel-list-images/28.jpg",
+    date: "October 21, 2024",
+  },
+  {
+    id: 29,
+    title:
+      "Arbor Day 2024: Collaborative Efforts in Coastal and Forest Restoration",
+    description: descriptionTwentyNine,
+    img: "/carousel-list-images/29.jpg",
+    date: "June 25, 2024",
+  },
 ];
 
 const CardLists = () => {
-  return (
-    <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      {cardItems.map((item) => (
-        <Drawer key={item.id}>
-          <DrawerTrigger asChild>
-            <button
-              type="button"
-              className="group flex h-115 w-full cursor-pointer flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white text-left shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
-            >
-              <div className="relative h-52 overflow-hidden bg-slate-100">
-                <Image
-                  src={item.img}
-                  alt={item.title}
-                  fill
-                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
-                  sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
-                />
-              </div>
+  const [showAllCards, setShowAllCards] = useState(false);
+  const visibleCardItems = showAllCards
+    ? cardItems
+    : cardItems.slice(0, INITIAL_VISIBLE_CARDS);
 
-              <div className="flex flex-1 flex-col px-6 py-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-                  {item.date}
-                </p>
-                <h3 className="mt-2 line-clamp-2 text-xl font-semibold leading-snug text-slate-950">
+  return (
+    <div>
+      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {visibleCardItems.map((item) => (
+          <Drawer key={item.id}>
+            <DrawerTrigger asChild>
+              <button
+                type="button"
+                className="group flex h-115 w-full cursor-pointer flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white text-left shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
+                <div className="relative h-52 overflow-hidden bg-slate-100">
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    fill
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                    sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                </div>
+
+                <div className="flex flex-1 flex-col px-6 py-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+                    {item.date}
+                  </p>
+                  <h3 className="mt-2 line-clamp-2 text-xl font-semibold leading-snug text-slate-950">
                   {item.title}
                 </h3>
                 <p className="mt-3 line-clamp-4 whitespace-pre-line text-sm leading-7 text-slate-600 sm:text-base">
-                  {item.description}
+                  {renderDescription(item.description)}
                 </p>
 
-                <span className="mt-auto inline-flex h-9 w-fit cursor-pointer items-center justify-center rounded-4xl border border-slate-300 px-3 text-sm font-medium text-slate-900 transition-colors hover:bg-slate-100">
-                  Read More
-                </span>
-              </div>
-            </button>
-          </DrawerTrigger>
+                  <span className="mt-auto inline-flex h-9 w-fit cursor-pointer items-center justify-center rounded-4xl border border-slate-300 px-3 text-sm font-medium text-slate-900 transition-colors hover:bg-slate-100">
+                    Read More
+                  </span>
+                </div>
+              </button>
+            </DrawerTrigger>
 
-          <DrawerContent className="mx-auto w-full max-w-3xl">
-            <div className="overflow-y-auto">
-              <div className="relative mx-4 mt-2 h-56 overflow-hidden bg-slate-100 sm:h-72">
-                <Image
-                  src={item.img}
-                  alt={item.title}
-                  fill
-                  className="object-contain"
-                  sizes="(min-width: 768px) 768px, 100vw"
-                />
-              </div>
+            <DrawerContent className="mx-auto w-full max-w-3xl">
+              <div className="overflow-y-auto">
+                <div className="relative mx-4 mt-2 h-56 overflow-hidden bg-slate-100 sm:h-72">
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    fill
+                    className="object-contain"
+                    sizes="(min-width: 768px) 768px, 100vw"
+                  />
+                </div>
 
-              <DrawerHeader className="text-left">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-                  {item.date}
-                </p>
-                <DrawerTitle className="text-2xl font-semibold leading-tight text-slate-950">
-                  {item.title}
-                </DrawerTitle>
-                {item.extraImg ? (
-                  <div className="relative mx-auto mt-4 h-16 w-16 overflow-hidden border border-slate-200 bg-slate-100 sm:h-20 sm:w-20">
-                    <Image
-                      src={item.extraImg}
-                      alt={`${item.title} supporting image`}
-                      fill
-                      className="object-contain"
-                      sizes="(min-width: 768px) 768px, 100vw"
-                    />
-                  </div>
-                ) : null}
-                <DrawerDescription className="whitespace-pre-line text-justify text-base leading-8 text-slate-600">
-                  {item.description}
-                </DrawerDescription>
-                {item.extraLink ? (
-                  <a
-                    href={item.extraLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-4 inline-flex w-fit text-sm font-semibold text-slate-950 underline decoration-slate-400 underline-offset-4 transition-colors hover:text-slate-700"
-                    style={{ textDecorationLine: "underline" }}
-                  >
-                    Visit for more information
-                  </a>
-                ) : null}
-                {item.videoLink ? (
-                  <div className="mt-4 overflow-hidden border border-slate-200 bg-slate-950">
-                    <div className="relative aspect-video">
-                      <iframe
-                        className="absolute inset-0 h-full w-full"
-                        src={getEmbedLink(item.videoLink)}
-                        title={`${item.title} video`}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
+                <DrawerHeader className="text-left">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+                    {item.date}
+                  </p>
+                  <DrawerTitle className="text-2xl font-semibold leading-tight text-slate-950">
+                    {item.title}
+                  </DrawerTitle>
+                  {item.extraImg ? (
+                    <div className="relative mx-auto mt-4 h-16 w-16 overflow-hidden border border-slate-200 bg-slate-100 sm:h-20 sm:w-20">
+                      <Image
+                        src={item.extraImg}
+                        alt={`${item.title} supporting image`}
+                        fill
+                        className="object-contain"
+                        sizes="(min-width: 768px) 768px, 100vw"
                       />
                     </div>
-                  </div>
-                ) : null}
-              </DrawerHeader>
+                  ) : null}
+                <DrawerDescription className="whitespace-pre-line text-justify text-base leading-8 text-slate-600">
+                  {renderDescription(item.description)}
+                </DrawerDescription>
+                  {item.extraLink ? (
+                    <a
+                      href={item.extraLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 inline-flex w-fit text-sm font-semibold text-slate-950 underline decoration-slate-400 underline-offset-4 transition-colors hover:text-slate-700"
+                      style={{ textDecorationLine: "underline" }}
+                    >
+                      Visit for more information
+                    </a>
+                  ) : null}
+                  {item.videoLink ? (
+                    <div className="mt-4 overflow-hidden border border-slate-200 bg-slate-950">
+                      <div className="relative aspect-video">
+                        <iframe
+                          className="absolute inset-0 h-full w-full"
+                          src={getEmbedLink(item.videoLink)}
+                          title={`${item.title} video`}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerPolicy="strict-origin-when-cross-origin"
+                          allowFullScreen
+                        />
+                      </div>
+                    </div>
+                  ) : null}
+                </DrawerHeader>
 
-              <DrawerFooter className="sm:flex-row sm:justify-end">
-                <DrawerClose asChild>
-                  <Button variant="outline">Close</Button>
-                </DrawerClose>
-              </DrawerFooter>
-            </div>
-          </DrawerContent>
-        </Drawer>
-      ))}
+                <DrawerFooter className="sm:flex-row sm:justify-end">
+                  <DrawerClose asChild>
+                    <Button variant="outline">Close</Button>
+                  </DrawerClose>
+                </DrawerFooter>
+              </div>
+            </DrawerContent>
+          </Drawer>
+        ))}
+      </div>
+
+      {cardItems.length > INITIAL_VISIBLE_CARDS ? (
+        <div className="mt-8 flex justify-center">
+          <Button
+            type="button"
+            variant="outline"
+            className="cursor-pointer rounded-full px-6"
+            onClick={() => setShowAllCards((current) => !current)}
+          >
+            {showAllCards ? "Show Less" : "Show More"}
+          </Button>
+        </div>
+      ) : null}
     </div>
   );
 };
