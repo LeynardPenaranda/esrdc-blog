@@ -134,6 +134,17 @@ a {
   text-decoration: none;
 }
 
+.brochure-pdf-frame {
+  border: 0;
+  display: block;
+  background: #f1f5f9;
+  contain: layout paint style;
+  content-visibility: auto;
+  contain-intrinsic-size: 720px;
+  overscroll-behavior: contain;
+  transform: translateZ(0);
+}
+
 .scroll-reveal {
   opacity: 0;
   transform: translate3d(0, 28px, 0);

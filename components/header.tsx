@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { colors } from "@/utils/colors";
-import { CENTER_ACRONYM, CENTER_NAME, HEADER_BRAND_NAME } from "@/utils/site";
+import {
+  CENTER_ACRONYM,
+  CENTER_NAME,
+  HEADER_BRAND_NAME,
+} from "@/utils/site";
 import NavList from "./ui/navlist";
 
 type HeaderProps = {
@@ -33,7 +37,7 @@ const Header = ({ brandName = HEADER_BRAND_NAME }: HeaderProps) => {
             className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"
           />
           <div className="flex min-w-0 items-center gap-2">
-            <span className="text-sm font-semibold tracking-[0.08em] text-slate-950 uppercase sm:hidden">
+            <span className="hidden text-sm font-semibold tracking-[0.08em] text-slate-950 uppercase min-[420px]:inline sm:hidden">
               SSU - {CENTER_ACRONYM}
             </span>
             <span className="hidden max-w-xs text-xs leading-tight font-semibold tracking-[0.04em] text-slate-950 uppercase sm:inline md:max-w-sm lg:max-w-md lg:text-sm">
@@ -44,7 +48,7 @@ const Header = ({ brandName = HEADER_BRAND_NAME }: HeaderProps) => {
 
         <Link
           href="/contact"
-          className="inline-flex shrink-0 items-center justify-center rounded-[10px] px-4 py-2.5 text-sm font-bold !text-white transition-transform hover:-translate-y-0.5 sm:px-5 sm:text-base lg:px-7 lg:py-3"
+          className="inline-flex h-10 shrink-0 items-center justify-center rounded-[10px] px-3 text-sm font-bold whitespace-nowrap !text-white transition-transform hover:-translate-y-0.5 sm:h-auto sm:px-5 sm:py-2.5 sm:text-base lg:px-7 lg:py-3"
           style={{
             backgroundColor: colors.primaryColor,
             borderColor: colors.primaryColor,

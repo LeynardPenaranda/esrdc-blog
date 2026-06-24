@@ -6,6 +6,7 @@ import { colors } from "@/utils/colors";
 
 const navItems = [
   { label: "Home", href: "/" },
+  { label: "Brochure", href: "/kalikascan-brochure" },
   { label: "Achievements", href: "/achievements" },
   { label: "Awards", href: "/awards" },
   { label: "Team", href: "/team" },

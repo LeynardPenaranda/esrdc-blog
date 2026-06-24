@@ -33,6 +33,25 @@ The University likewise acknowledges the invaluable contributions and support of
 There are other faculty who presented their studies, Dr. Ian Nibalvos , Dr. Edelyn O. Echapare, and Ms. Mary Jane B. Cinco. 
 Congratulations for bringing honor to SSU! 
 #WeInnovateWeBuildWeServe #SamarStateUniversity #iSUSTAIN2026 #BestPaperAward`;
+const descriptionHundredThree = `𝗦𝗮𝗺𝗮𝗿 𝗦𝘁𝗮𝘁𝗲 𝗨𝗻𝗶𝘃𝗲𝗿𝘀𝗶𝘁𝘆 𝗦𝘁𝗿𝗲𝗻𝗴𝘁𝗵𝗲𝗻𝘀 𝗘𝗻𝘃𝗶𝗿𝗼𝗻𝗺𝗲𝗻𝘁𝗮𝗹 𝗮𝗻𝗱 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝗣𝗮𝗿𝘁𝗻𝗲𝗿𝘀𝗵𝗶𝗽𝘀 𝗧𝗵𝗿𝗼𝘂𝗴𝗵 𝗧𝘄𝗼 𝗠𝗢𝗔 𝗦𝗶𝗴𝗻𝗶𝗻𝗴𝘀
+Samar State University (SSU) formalized two significant partnerships through the signing of Memoranda of Agreement (MOAs) with the Provincial Government of Samar and the Samar Island Natural Park (SINP) through the Protected Area Management Board (PAMB). The signing ceremony was held at the 2nd Floor Board Room of Samar State University, bringing together university officials, representatives from the Provincial Government of Samar, and members of the PAMB to reaffirm their shared commitment to sustainable development, environmental stewardship, and institutional collaboration.
+The first MOA between Samar State University and the Provincial Government of Samar establishes a framework for the Promotion of Sustainable Plastic Waste Management through the Institutionalized Collection and Donation of PEP or Soft Plastics and Utilization of Recycled Plastic Products under the Environmental Sustainability Research and Development Center. 
+Meanwhile, the second MOA between Samar State University and Samar Island Natural Park (SINP) through the Protected Area Management Board (PAMB) focuses on advancing biodiversity conservation, environmental protection, and sustainable resource management within the Samar Island Natural Park. 
+The two MOA signing highlights SSU’s continued commitment to forging strategic partnerships that enhance instruction, research, extension, and production while contributing to the long-term well-being of both the environment and the communities it serves.
+#SSUESRDC #SamarStateUniversity #WeInnovateWeBuildWeServe`;
+
+const descriptionHundredTwo = `𝗦𝗮𝗺𝗮𝗿 𝗜𝘀𝗹𝗮𝗻𝗱 𝗡𝗮𝘁𝘂𝗿𝗮𝗹 𝗣𝗮𝗿𝗸-𝗣𝗔𝗠𝗕 𝗛𝗼𝗹𝗱𝘀 𝗙𝗶𝗿𝘀𝘁 𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗕𝗼𝗮𝗿𝗱 𝗠𝗲𝗲𝘁𝗶𝗻𝗴
+The Protected Area Management Board (PAMB) of the Samar Island Natural Park convened its First Special Board Meeting on June 23, 2026, at the 3rd Floor Convention Center of Samar State University in Catbalogan City. The meeting brought together representatives from government agencies, local government units, academic institutions, and other stakeholders to discuss important conservation, research, and development initiatives within the protected area.
+Welcome remarks were delivered by 𝗗𝗿. 𝗥𝗲𝗱𝗲𝗻𝘁𝗼𝗿 𝗦. 𝗣𝗮𝗹𝗲𝗻𝗰𝗶𝗮, University President, who emphasized the importance of collaboration among stakeholders in ensuring the sustainable management of Samar’s rich biodiversity and natural resources.
+Following the declaration of a quorum by 𝗗𝗿. 𝗟𝗲𝗼𝗻𝗮 𝗠. 𝗧𝘂𝗺𝗮𝗺𝗮𝗸, the PAMB members proceeded with the approval of the meeting agenda and the review of the minutes of previous meetings. Discussions then focused on key agenda items aimed at strengthening conservation efforts and promoting sustainable development within the protected area.
+Among the major matters presented for board approval was the research protocol of 𝗘𝗻𝗴𝗿. 𝗝𝗼𝗵𝗻 𝗥𝗵𝗲𝘆 𝗬. 𝗗𝗮𝘆𝗮𝗻𝗴, which seeks to contribute valuable scientific information for the management of the Samar Island Natural Park. The board also reviewed a Memorandum of Agreement concerning the conduct, coordination, implementation, and extension of research-related initiatives between Samar State University and the protected area management. The agreement was presented by 𝗠𝗿. 𝗔𝗻𝗱𝗿𝗲𝘀 𝗜𝗜𝗜 𝗕. 𝗦𝗲𝗾𝘂𝗶𝘁𝗼. 
+A portion of the meeting was dedicated to presenting science-based biodiversity conservation recommendations by 𝗠𝘀. 𝗗𝗶𝗮𝗻𝗮 𝗦𝗵𝗮𝗻𝗲 𝗕𝗮𝗹𝗶𝗻𝗱𝗼, Director of the Center for Fisheries and Aquatic Resources Research and Development (CFARRD). The presentation highlighted the results of Phase III of the Conserve-Kaigangan Project, showcasing key findings and recommendations aimed at strengthening biodiversity conservation efforts.
+Members also participated in the signing of a Memorandum of Agreement for the protection and sustainable management of the Basey–Maydolong Road Project, ensuring that infrastructure development remains consistent with environmental protection goals. The board likewise deliberated on the request for the extension of wildlife research permits for ongoing studies being conducted within the protected area, presented by 𝗠𝘀. 𝗖𝗼𝗹𝗲𝗲𝗻 𝗦. 𝗧𝗶𝗯𝗮𝗿.
+Another agenda item was the presentation of the proposed potable water system subproject for selected barangays in the Municipality of Paranas, Samar, by 𝗘𝗻𝗴𝗿. 𝗩𝗶𝗿𝗴𝗶𝗻𝗶𝗮 𝗔. 𝗛𝗶𝗹𝘃𝗮𝗻𝗼. She outlined plans to improve water supply services for communities while ensuring compliance with environmental safeguards and conservation objectives.
+The meeting concluded with discussions on other matters and closing remarks from 𝗔𝗿𝘁𝘂𝗿𝗼 𝗡. 𝗦𝗮𝗹𝗮𝘇𝗮𝗿, D.M., CESO IV, Chairman and Regional Executive Director of the Department of Environment and Natural Resources (DENR) Region VIII.
+The successful conduct of the First Special Board Meeting reaffirmed the commitment of the Protected Area Management Board and its partners to balancing environmental conservation, scientific research, and sustainable development initiatives within the Samar Island Natural Park.
+#SSUESRDC #SINP #SamarStateUniversity #WeInnovateWeBuildWeServe #BiodiversityConservation
+photo courtesy of 𝐒𝐚𝐦𝐚𝐫 𝐈𝐬𝐥𝐚𝐧𝐝 𝐍𝐚𝐭𝐮𝐫𝐚𝐥 𝐏𝐚𝐫𝐤`;
 
 const descriptionOne = `#𝗞𝗮𝗹𝗶𝗸𝗮𝗦𝗰𝗮𝗻 🌱 #𝗔𝗻𝗶𝗺𝗮𝗟𝗲𝗻𝘀 🐾 | Samar State University, through the ${CENTER_NAME}, successfully conducted a 𝗖𝗮𝗽𝗮𝗰𝗶𝘁𝘆 𝗕𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝗼𝗻 𝘁𝗵𝗲 𝗨𝘁𝗶𝗹𝗶𝘇𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗞𝗮𝗹𝗶𝗸𝗮𝗦𝗰𝗮𝗻 𝗮𝗻𝗱 𝗔𝗻𝗶𝗺𝗮𝗟𝗲𝗻𝘀 𝗳𝗼𝗿 𝗪𝗮𝘁𝗲𝗿𝘀𝗵𝗲𝗱 𝗖𝗵𝗮𝗿𝗮𝗰𝘁𝗲𝗿𝗶𝘇𝗮𝘁𝗶𝗼𝗻, 𝗕𝗶𝗼𝗱𝗶𝘃𝗲𝗿𝘀𝗶𝘁𝘆 𝗔𝘀𝘀𝗲𝘀𝘀𝗺𝗲𝗻𝘁, 𝗮𝗻𝗱 𝗗𝗮𝘁𝗮 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 at the Audio Visual Room, RIC Building, Samar State University, Catbalogan City, Samar on April 7, 2026. The activity gathered participants from DENR-CENRO Sta. Rita and LGU Calbiga-MENRO to enhance their skills in using innovative digital tools designed to support environmental research and data-driven decision-making. The formal opening of the event was led by 𝗘𝗻𝗴𝗿. 𝗙𝗲𝗹𝗶𝘀𝗮 𝗘. 𝗚𝗼𝗺𝗯𝗮, 𝗣𝗵.𝗗., Vice President for Research and Extension Services. In her opening remarks, Dr. Gomba highlighted the 𝘶𝘯𝘪𝘷𝘦𝘳𝘴𝘪𝘵𝘺’𝘴 𝘴𝘵𝘳𝘰𝘯𝘨 𝘤𝘰𝘮𝘮𝘪𝘵𝘮𝘦𝘯𝘵 𝘵𝘰 𝘴𝘢𝘧𝘦𝘨𝘶𝘢𝘳𝘥𝘪𝘯𝘨 𝘵𝘩𝘦 𝘪𝘯𝘵𝘦𝘭𝘭𝘦𝘤𝘵𝘶𝘢𝘭 𝘱𝘳𝘰𝘱𝘦𝘳𝘵𝘺 𝘳𝘪𝘨𝘩𝘵𝘴 𝘰𝘧 𝘪𝘵𝘴 𝘳𝘦𝘴𝘦𝘢𝘳𝘤𝘩𝘦𝘳𝘴 𝘢𝘯𝘥 𝘪𝘯𝘯𝘰𝘷𝘢𝘵𝘰𝘳𝘴. She emphasized that as new technologies such as 𝗞𝗮𝗹𝗶𝗸𝗮𝗦𝗰𝗮𝗻 and 𝗔𝗻𝗶𝗺𝗮𝗟𝗲𝗻𝘀 are developed, the university will take proactive steps to ensure that these innovations are properly documented and registered. According to her, this not only protects the creators’ rights but also strengthens the institution’s credibility and ownership of its scientific contributions. She further encouraged participants to continue developing innovative solutions, assuring them that the university will provide support in securing legal protection, promoting responsible utilization, and maximizing the societal impact of their work. The activity proceeded with the application orientation of KalikaScan and AnimaLens, facilitated by 𝗗𝗿. 𝗘𝗱𝗲𝗹𝘆𝗻 𝗢. 𝗘𝗰𝗵𝗮𝗽𝗮𝗿𝗲, ${CENTER_NAME} Director, and 𝗠𝗿. 𝗔𝗻𝗱𝗿𝗲𝘀 𝗜𝗜𝗜 𝗕. 𝗦𝗲𝗾𝘂𝗶𝘁𝗼, Faculty Researcher. The session provided participants with an overview of the applications’ features and their practical use in watershed characterization, biodiversity monitoring, and efficient data management. During the workshop proper, participants actively engaged in hands-on exercises, exploring the functionalities of both applications. Many raised questions and shared insights, noting that KalikaScan and AnimaLens have the potential to significantly simplify and improve their fieldwork and data processing tasks. The interactive discussions reflected a strong interest in integrating these tools into their respective research and extension initiatives. Feedback gathered during the session indicated a positive reception, with participants expressing optimism about the applications’ usability and relevance. Both KalikaScan and AnimaLens are seen to be on a promising path toward success, especially as continuous improvements will be guided by feedback from end users. This collaborative approach ensures that the applications remain responsive to the actual needs of researchers and practitioners in the field. The program concluded with closing remarks from 𝗗𝗿. 𝗙𝗹𝗼𝗿𝗮𝗯𝗲𝗹𝗹𝗲 𝗕. 𝗣𝗮𝘁𝗼𝘀𝗮, Executive Director for Extension Services, who commended the participants for their active involvement and encouraged them to apply their newly acquired knowledge in advancing sustainable and inclusive development. As the workshop demonstrated, when innovation meets collaboration, even the most complex ecosystems become easier to understand—proving that with the right tools in hand, protecting our environment is no longer just a challenge, but a shared and achievable mission. #SamarStateUniversity #WeInnovateWeBuildWeServe #SSUESRDC #KalikaScan #AnimaLens via 𝐉𝐮𝐬𝐭𝐲𝐧𝐞 𝐌𝐚𝐲𝐞 𝐍𝐚𝐛𝐚𝐛𝐥𝐢𝐭 | SSU-ESRDC`;
 
@@ -278,6 +297,22 @@ const renderDescription = (description: string) =>
   );
 
 const cardItems: CardItem[] = [
+  {
+    id: 103,
+    title:
+      "Samar State University Forges Strategic Partnerships Through Dual MOA Signing for Environmental Sustainability and Conservation",
+    description: descriptionHundredThree,
+    img: "/carousel-list-images/103.jpg",
+    date: "June 24, 2026",
+  },
+  {
+    id: 102,
+    title:
+      "Samar Island Natural Park–PAMB Convenes First Special Board Meeting to Advance Conservation and Sustainable Development",
+    description: descriptionHundredTwo,
+    img: "/carousel-list-images/102.jpg",
+    date: "June 24, 2026",
+  },
   {
     id: 101,
     title:
