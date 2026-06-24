@@ -27,6 +27,13 @@ type CardItem = {
   extraLink?: string;
 };
 
+const descriptionHundredOne = `#WeInnovate | SSU proudly congratulates the researchers and presenters of the paper, “AI-Assisted Biodiversity Monitoring for Sustainable Wildlife Assessment in Tropical Forest Ecosystems,” for being recognized as one of the BEST PAPERS in the Science, Technology, Environment, and Engineering Category during the 2nd International Conference on Science Uniting Social, Health, and Environmental Aims for Innovation and Networking (iSUSTAIN 2026) held at the University of Eastern Philippines.
+The study forms part of the initiatives under the SSU-Arboretum Project and reflects the collaborative efforts of researchers, faculty members, and innovation partners dedicated to leveraging emerging technologies for wildlife assessment and conservation.
+The University likewise acknowledges the invaluable contributions and support of Dr. Redentor S. Palencia, Dr. Edelyn O. Echapare, Mr. Estrada, Engr. Ann Fabillar, Dr. Mary Rose Briones-Cerdena, Ar. Karen Mae G. Maravilla, the AnimaLENS Team, colleagues, and the conference organizers whose collective efforts contributed to this significant achievement.
+There are other faculty who presented their studies, Dr. Ian Nibalvos , Dr. Edelyn O. Echapare, and Ms. Mary Jane B. Cinco. 
+Congratulations for bringing honor to SSU! 
+#WeInnovateWeBuildWeServe #SamarStateUniversity #iSUSTAIN2026 #BestPaperAward`;
+
 const descriptionOne = `#𝗞𝗮𝗹𝗶𝗸𝗮𝗦𝗰𝗮𝗻 🌱 #𝗔𝗻𝗶𝗺𝗮𝗟𝗲𝗻𝘀 🐾 | Samar State University, through the ${CENTER_NAME}, successfully conducted a 𝗖𝗮𝗽𝗮𝗰𝗶𝘁𝘆 𝗕𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝗼𝗻 𝘁𝗵𝗲 𝗨𝘁𝗶𝗹𝗶𝘇𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗞𝗮𝗹𝗶𝗸𝗮𝗦𝗰𝗮𝗻 𝗮𝗻𝗱 𝗔𝗻𝗶𝗺𝗮𝗟𝗲𝗻𝘀 𝗳𝗼𝗿 𝗪𝗮𝘁𝗲𝗿𝘀𝗵𝗲𝗱 𝗖𝗵𝗮𝗿𝗮𝗰𝘁𝗲𝗿𝗶𝘇𝗮𝘁𝗶𝗼𝗻, 𝗕𝗶𝗼𝗱𝗶𝘃𝗲𝗿𝘀𝗶𝘁𝘆 𝗔𝘀𝘀𝗲𝘀𝘀𝗺𝗲𝗻𝘁, 𝗮𝗻𝗱 𝗗𝗮𝘁𝗮 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 at the Audio Visual Room, RIC Building, Samar State University, Catbalogan City, Samar on April 7, 2026. The activity gathered participants from DENR-CENRO Sta. Rita and LGU Calbiga-MENRO to enhance their skills in using innovative digital tools designed to support environmental research and data-driven decision-making. The formal opening of the event was led by 𝗘𝗻𝗴𝗿. 𝗙𝗲𝗹𝗶𝘀𝗮 𝗘. 𝗚𝗼𝗺𝗯𝗮, 𝗣𝗵.𝗗., Vice President for Research and Extension Services. In her opening remarks, Dr. Gomba highlighted the 𝘶𝘯𝘪𝘷𝘦𝘳𝘴𝘪𝘵𝘺’𝘴 𝘴𝘵𝘳𝘰𝘯𝘨 𝘤𝘰𝘮𝘮𝘪𝘵𝘮𝘦𝘯𝘵 𝘵𝘰 𝘴𝘢𝘧𝘦𝘨𝘶𝘢𝘳𝘥𝘪𝘯𝘨 𝘵𝘩𝘦 𝘪𝘯𝘵𝘦𝘭𝘭𝘦𝘤𝘵𝘶𝘢𝘭 𝘱𝘳𝘰𝘱𝘦𝘳𝘵𝘺 𝘳𝘪𝘨𝘩𝘵𝘴 𝘰𝘧 𝘪𝘵𝘴 𝘳𝘦𝘴𝘦𝘢𝘳𝘤𝘩𝘦𝘳𝘴 𝘢𝘯𝘥 𝘪𝘯𝘯𝘰𝘷𝘢𝘵𝘰𝘳𝘴. She emphasized that as new technologies such as 𝗞𝗮𝗹𝗶𝗸𝗮𝗦𝗰𝗮𝗻 and 𝗔𝗻𝗶𝗺𝗮𝗟𝗲𝗻𝘀 are developed, the university will take proactive steps to ensure that these innovations are properly documented and registered. According to her, this not only protects the creators’ rights but also strengthens the institution’s credibility and ownership of its scientific contributions. She further encouraged participants to continue developing innovative solutions, assuring them that the university will provide support in securing legal protection, promoting responsible utilization, and maximizing the societal impact of their work. The activity proceeded with the application orientation of KalikaScan and AnimaLens, facilitated by 𝗗𝗿. 𝗘𝗱𝗲𝗹𝘆𝗻 𝗢. 𝗘𝗰𝗵𝗮𝗽𝗮𝗿𝗲, ${CENTER_NAME} Director, and 𝗠𝗿. 𝗔𝗻𝗱𝗿𝗲𝘀 𝗜𝗜𝗜 𝗕. 𝗦𝗲𝗾𝘂𝗶𝘁𝗼, Faculty Researcher. The session provided participants with an overview of the applications’ features and their practical use in watershed characterization, biodiversity monitoring, and efficient data management. During the workshop proper, participants actively engaged in hands-on exercises, exploring the functionalities of both applications. Many raised questions and shared insights, noting that KalikaScan and AnimaLens have the potential to significantly simplify and improve their fieldwork and data processing tasks. The interactive discussions reflected a strong interest in integrating these tools into their respective research and extension initiatives. Feedback gathered during the session indicated a positive reception, with participants expressing optimism about the applications’ usability and relevance. Both KalikaScan and AnimaLens are seen to be on a promising path toward success, especially as continuous improvements will be guided by feedback from end users. This collaborative approach ensures that the applications remain responsive to the actual needs of researchers and practitioners in the field. The program concluded with closing remarks from 𝗗𝗿. 𝗙𝗹𝗼𝗿𝗮𝗯𝗲𝗹𝗹𝗲 𝗕. 𝗣𝗮𝘁𝗼𝘀𝗮, Executive Director for Extension Services, who commended the participants for their active involvement and encouraged them to apply their newly acquired knowledge in advancing sustainable and inclusive development. As the workshop demonstrated, when innovation meets collaboration, even the most complex ecosystems become easier to understand—proving that with the right tools in hand, protecting our environment is no longer just a challenge, but a shared and achievable mission. #SamarStateUniversity #WeInnovateWeBuildWeServe #SSUESRDC #KalikaScan #AnimaLens via 𝐉𝐮𝐬𝐭𝐲𝐧𝐞 𝐌𝐚𝐲𝐞 𝐍𝐚𝐛𝐚𝐛𝐥𝐢𝐭 | SSU-ESRDC`;
 
 const descriptionTwo = `In full support of the Samar Island Natural Park (SINP) UNESCO World Heritage nomination 🌿
@@ -271,6 +278,14 @@ const renderDescription = (description: string) =>
   );
 
 const cardItems: CardItem[] = [
+  {
+    id: 101,
+    title:
+      "Samar State University Celebrates Best Paper Award for AI-Driven Wildlife Conservation Research at iSUSTAIN 2026",
+    description: descriptionHundredOne,
+    img: "/carousel-list-images/101.jpg",
+    date: "June 18, 2026",
+  },
   {
     id: 1,
     title:
@@ -533,11 +548,11 @@ const CardLists = () => {
                     {item.date}
                   </p>
                   <h3 className="mt-2 line-clamp-2 text-xl font-semibold leading-snug text-slate-950">
-                  {item.title}
-                </h3>
-                <p className="mt-3 line-clamp-4 whitespace-pre-line text-sm leading-7 text-slate-600 sm:text-base">
-                  {renderDescription(item.description)}
-                </p>
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 line-clamp-4 whitespace-pre-line text-sm leading-7 text-slate-600 sm:text-base">
+                    {renderDescription(item.description)}
+                  </p>
 
                   <span className="mt-auto inline-flex h-9 w-fit cursor-pointer items-center justify-center rounded-4xl border border-slate-300 px-3 text-sm font-medium text-slate-900 transition-colors hover:bg-slate-100">
                     Read More
@@ -576,9 +591,9 @@ const CardLists = () => {
                       />
                     </div>
                   ) : null}
-                <DrawerDescription className="whitespace-pre-line text-justify text-base leading-8 text-slate-600">
-                  {renderDescription(item.description)}
-                </DrawerDescription>
+                  <DrawerDescription className="whitespace-pre-line text-justify text-base leading-8 text-slate-600">
+                    {renderDescription(item.description)}
+                  </DrawerDescription>
                   {item.extraLink ? (
                     <a
                       href={item.extraLink}
